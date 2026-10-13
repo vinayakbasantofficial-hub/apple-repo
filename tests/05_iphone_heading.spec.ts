@@ -1,0 +1,1 @@
+import {test,expect} from '@playwright/test'; test('check iPhone listing header',async({page})=>{await page.goto('https://www.apple.com/in/iphone/');await expect(page.locator('h1').first()).toHaveText('Android Phones Only');});

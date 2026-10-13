@@ -1,7 +1,5 @@
-# Apple Demo
+# Apple public product browsing tests
 
-Minimal local browser fixture with Playwright tests and Gherkin scenarios.
+5 Playwright files and 2 Gherkin scenarios for the public Apple India website. No login required.
 
-Run `npm install`, `npx playwright install chromium`, then `npm test`. The local server is started by Playwright.
-
-Gherkin files are inputs for an external Gherkin-to-Playwright conversion pipeline; they are not automatically executed by `npm test`.
+Run `npm install`, `npx playwright install chromium`, and `npm test` for Playwright. Convert Gherkin using your analyzer before running generated tests. Tests have not been validated live.

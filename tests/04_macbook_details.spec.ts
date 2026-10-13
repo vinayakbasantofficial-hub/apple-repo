@@ -1,0 +1,1 @@
+import {test,expect} from '@playwright/test'; test('inspect MacBook Air',async({page})=>{await page.goto('https://www.apple.com/in/macbook-air/');await expect(page).toHaveURL(/macbook-air/);await expect(page.locator('h1').first()).toContainText('MacBook Air');});

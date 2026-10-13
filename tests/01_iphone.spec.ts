@@ -1,0 +1,1 @@
+import {test,expect} from '@playwright/test'; test('find iPhone models',async({page})=>{await page.goto('https://www.apple.com/in/iphone/');await expect(page.locator('h1').first()).toContainText('iPhone');});
