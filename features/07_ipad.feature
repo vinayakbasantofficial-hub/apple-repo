@@ -1,16 +1,16 @@
-Feature: Explore the Apple iPad shopping journey
-  As a visitor to the Apple India website
-  I want to inspect the iPad collection and compare devices
-  So that I can choose an appropriate iPad
+Feature: Explore and evaluate iPad models on Apple India
+  As a customer researching a new tablet
+  I want to browse available iPads, review a professional model, and compare devices
+  So that I can choose a tablet without logging in
 
-  Scenario: View the iPad range from the product landing page
+  Scenario: Discover the available iPad family
     Given I navigate to "https://www.apple.com/in/ipad/"
     Then the main heading contains "iPad"
 
-  Scenario: Review the iPad model comparison page
+  Scenario: Explore the iPad Pro product overview
+    Given I navigate to "https://www.apple.com/in/ipad-pro/"
+    Then the main heading contains "iPad Pro"
+
+  Scenario: Compare iPad models
     Given I navigate to "https://www.apple.com/in/ipad/compare/"
-    Then the main heading contains "Compare"
-
-  Scenario: Explore available iPad devices
-    Given I navigate to "https://www.apple.com/in/ipad/"
-    Then the main heading contains "iPad"
+    Then the main heading contains "Compare iPad models"
